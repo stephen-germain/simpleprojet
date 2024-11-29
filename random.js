@@ -4,9 +4,8 @@ function getRandomInt(max) {
 
 function generateRandom() {
     let max = document.getElementById('max').value;
-	console.log(max);
-
-    alert(getRandomInt(max));
+    let res = document.getElementById('result');
+    res.textContent = 'Result: ' + getRandomInt(max);
 }
 
 let button = document.querySelector('button');
